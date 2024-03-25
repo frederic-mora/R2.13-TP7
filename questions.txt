@@ -1,0 +1,13 @@
+/*  OBJECTIF
+
+    Regardez la vidéo objectif.mp4
+
+    Pour l'application cliente, on souhaite avoir 2 modes de visualisation. Un pour afficher un menu
+    en choisissant une semaine et un jour (mode actuel) et un nouveau qui permet juste de choisir une 
+    semaine et de voir tous les menus (existant) pour cette semaine.
+
+    Good Luck !
+
+    ATTENTION : pensez à remplacer les ??? par votre identifiant 
+    dans server/model.php avant de tester quoi que ce soit !
+*/

@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Les menus de la semaine</title>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+        
+        <section>
+           
+            <nav class="week"> <!-- contenu statique -->
+                <div class="dayorweek">
+                    <h1>Par jour</h1>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <h1>Par semaine</h1>
+                </div>
+                <h1>Les menus de la semaine <input type="number" id="semaine"> </h1>
+                <div id="days">
+                    <button onclick="requestMenu('lundi')">Lundi</button>
+                    <button onclick="requestMenu('mardi')">Mardi</button>
+                    <button onclick="requestMenu('mercredi')">Mercredi</button>
+                    <button onclick="requestMenu('jeudi')">Jeudi</button>
+                    <button onclick="requestMenu('vendredi')">Vendredi</button>
+                    <button onclick="requestMenu('samedi')">Samedi</button>
+                    <button onclick="requestMenu('dimanche')">Dimanche</button>
+                </div>
+            </nav>
+
+            <div class="menus"> <!-- contenu dynamique -->
+
+            </div>
+
+        </section>
+
+        <template>
+            <div class="menu">
+                <section>
+                    <span>{{entree}}</span><br>
+                </section>
+                
+                <section>
+                    <span>~</span><br>
+                    <span>{{plat}}</span><br>
+                </section>
+
+                <section>
+                    <span>~</span><br>
+                    <span>{{dessert}}</span><br>
+                </section>
+            </div>  
+        </template>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
